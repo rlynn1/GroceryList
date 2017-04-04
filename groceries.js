@@ -1,20 +1,6 @@
-var item;
-var myList = [];
 function addItem(){
-  var input = document.getElementById("newItem").value;
-  var list = document.getElementById("listDisplay");
-  item = document.createElement("li");
-  var btn = createRemoveButton();
-  btn.addEventListener("click",removeListItem,false);
-  myList.push(input);
-  //console.log(myList);
-  var itemName = document.createTextNode(input);
-  item.appendChild(itemName);
-  item.appendChild(btn);
-  list.appendChild(item);
-  document.getElementById("newItem").value = "";
-}
 
+}
 function createRemoveButton(){
   var close = document.createElement("button");
   close.classList.add("btn");
